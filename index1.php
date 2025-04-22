@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discover India
+    </title>
+    <link rel="stylesheet" href="style1.css">
+
+    <!-- font code -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap" rel="stylesheet">
+     
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400..700&display=swap" rel="stylesheet">    
+    
+    <!-- bs code snippets -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- fontawasome script code -->
+    <script src="https://kit.fontawesome.com/68e3478d5d.js" crossorigin="anonymous"></script>
+
+
+    <!-- swiper css code -->
+    <!-- REMIXICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css" crossorigin="">
+
+    <!-- SWIPER CSS --> 
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+    <script>
+      //to show the alert message when user is logged in
+      alert ("You are successfully logged in.");
+     function displayMunnar(){
+      window.location.href="munnar.html"
+     }
+
+      function displayGoa(){
+        window.location.href="goa.html"
+      }
+
+      function displayAgra(){
+        window.location.href="agra.html"
+      }
+
+      function displayOoty(){
+        window.location.href="ooty.html";
+      }
+
+      function displaykashmir(){
+        window.location.href="kashmir.html";
+      }
+
+      function displayJaipur(){
+        window.location.href="jaipur.html";
+      }
+
+      function displayAlappuzha(){
+        window.location.href="allapuzha.html";
+      }
+      function displayBangolore(){
+        window.location.href="bangalore.html";
+      }
+
+      function logout(){
+        window.location.href="index.php";
+        alert("You have successfully logged out.");
+      }
+    </script>
+    <style>
+    #opt6{
+    background-color: red;
+    margin-right: 15px;
+    border-radius: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 0px;
+    }
+    </style>
+</head>
+
+<body>
+
+   <!-- home page -->
+  <div id="home-page-id">
+    <!-- Video Background -->
+    <div class="video-container">
+      <video autoplay loop muted>
+          <source src="images/munnar-video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      
+    </div>
+  
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-style fixed-top" id="navbar-style1">
+      <div class="container-fluid pt-0 mt-0">
+       <a class="navbar-brand mb-0" id="navbar-head" href="">Discover <span style="color:#c44129;">India</span> </a>
+       <a class="navbar-brand d-sm-block d-md-none mb-0" id="navbar-head" href="#">
+         <img src="images/dis-india-removebg-preview (1).png" style="height:100px; width: 100px; margin: 0%;" alt="">
+       </a>
+  
+       <a class="navbar-brand d-none d-md-block" id="navbar-head" href="#">
+         <img src="images/dis-india-removebg-preview (1).png" style="height:80px; width: 80px; margin-left: 380px; padding: 0px;" alt="">
+       </a>
+       
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <img src="images/download-removebg-preview.png" id="hamburger" alt="">
+       </button>
+
+       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+         <div class="navbar-nav ml-auto" id="navbar-id">
+           <a class="nav-link"  id="opt1" href="#home-page-id" onclick="placesScroll">
+             Home
+           </a>
+           <a class="nav-link" id="opt2" href="#famous-places-page-id">Places</a>
+           <a class="nav-link" id="opt3" href="#features-page-id" >Features</a>
+           <a class="nav-link " id="opt4" href="#end-card">Contact</a>
+           <a class="nav-link " id="opt5"  onclick="logout()">Logout</a>
+
+         </div>
+       </div>  
+     </div>  
+    </nav>
+      
+    <!-- home page content card -->
+    <div class="home-page-container">
+      <div class="content">
+        <h1 class="content-head">Welcome to Discover India</h1>
+        <p>Discover india is amazing trip organizing website.</p>
+        <a href="#" class="learn-btn">Learn More</a>
+      </div>
+    </div>   
+  </div>  
+
+
+
+  
+  <!-- famous places page-->
+  <div id="famous-places-page-id"> 
+    <div class="famous-places-page pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 mb-3 mb-4">
+            <h1 class="content-head">Famous Places in India</h1>
+          </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+           <div class="places-card  d-flex flex-column justify-content-end align-items-center" onclick="displayMunnar()"
+           style="background-image: url(images/munnar.jpg); background-size: cover;">
+           <div class="places-card-text">
+            <h4 align="center" >
+              <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">Munnar</a>
+            </h4>
+            <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+          </div>  
+          <!--  <div class="places-card-text">
+              <h1 style="font-size: 15px; margin: 3px;">Tour's and travel</h1>
+              <p style="font-size: 10px; margin: 3px;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, libero!</p>
+              <button style="font-size: 10px; " class="btn btn-dark m-0 p-1 ">Book Now</button>
+            </div> 
+          -->
+          
+           </div>
+          </div>
+
+          
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+          <div onclick="displaykashmir()" class="places-card  d-flex flex-column justify-content-end align-items-center" 
+          style="background-image: url(images/manali.jpg); background-size: cover;">
+          <div class="places-card-text" align="center" >
+            <h4 >
+              <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                Kashmir
+              </a>
+            </h4>
+            <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+          </div>  
+          
+          </div>
+         </div>
+
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex flex-column align-items-center">
+            <div onclick="displayAlappuzha()" class="places-card d-flex flex-column justify-content-end align-items-center" 
+            style="background-image: url(images/wmremove-transformed.jpeg)
+            ; background-size: cover;">
+              <div class="places-card-text">
+                <h4 align="center">
+                  <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                  Alappuzha
+                  </a>
+                </h4>
+                <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+              </div>  
+              
+            </div>
+           </div>
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div  class="places-card  d-flex flex-column justify-content-end align-items-center"   onclick="displayAgra()"
+            style="background-image: url(images/taj1.jpg); background-size: cover; ">
+            <div class="places-card-text">
+              <h4 align="center">
+                <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                  Arga
+                </a>
+              </h4>
+              <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+            </div>  
+            
+            </div>
+           </div>
+
+
+
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div  class="places-card d-flex flex-column justify-content-end align-items-center"  onclick="displayGoa()"
+            style="background-image: url(images/goa1.jpeg); background-size: cover; ">
+            <div class="places-card-text">
+              <h4 align="center">
+                <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                  Goa
+                </a>
+              </h4>
+              <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+            </div>  
+             
+            </div>
+           </div> 
+           
+
+          
+ 
+           <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+             <div onclick="displayJaipur()" class="places-card 3 d-flex flex-column justify-content-end align-items-center" 
+             style="background-image: url(images/jaipur.jpg)
+             ; background-size: cover; ">
+              <div class="places-card-text">
+                <h4 align="center">
+                  <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                    Jaipur
+                  </a>
+                </h4>
+                <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+              </div>  
+
+             </div>
+
+             
+            </div>
+
+
+        <!-- next cards -->   
+         
+      
+
+         <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+          <div class="">
+           <div  class="places-card d-flex flex-column justify-content-end align-items-center " onclick="displayOoty()"
+           style="background-image: url(images/ooty.jpg)
+           ; background-size: cover; ">
+              <div class="places-card-text">
+                <h4 align="center">
+                  <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                    Ooty
+                  </a>
+                </h4>
+                <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+              </div>  
+ 
+           </div>
+          </div>
+        </div> 
+
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center">
+            <div onclick="displayBangolore()" class="places-card d-flex flex-column justify-content-end align-items-center" 
+            style="background-image: url(images/pexels-mnannapaneni-13819269.jpg); background-size: cover;">
+            <div class="places-card-text">
+              <h4 align="center">
+                <a href="" style="font-size: 20px; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; color: whitesmoke ; ">
+                  Delhi
+                </a>
+              </h4>
+              <button style="font-size: 10px; " class="btn btn-dark">Explore More</button>
+            </div>  
+
+            </div>
+           </div>
+  
+
+          
+        </div>
+      </div> 
+    </div>
+  </div>
+ 
+
+
+
+  <!-- features of our page -->
+  <div id="features-page-id">
+    <div class="features-page mb-5" >
+        <div class="container pt-5 pb-5">
+          <div class="">
+            <h1 class="content-head">Features</h1>
+          </div>
+
+          <div class="row" align = "center">
+            <div class="col-6 col-md-3">
+              <div class="features-page-card" onclick="display()"> 
+                <i class="fa-solid fa-piggy-bank fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Budget friendly</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-taxi fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Taxi</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-utensils fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Iternaries</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-plane fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Aeroplane</p>
+              </div>
+            </div>
+
+
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-user-group fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Customer support</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-hotel fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Hotal</p>
+              </div>
+            </div>
+
+
+
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-brands fa-google fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">Website Support</p>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="features-page-card">
+                <i class="fa-solid fa-phone fa-3x"></i>
+                <p class="mt-2" style="font-size: 13px;">24/7 Call Support</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+    </div>
+  </div>   
+
+
+  <!-- offers page -->
+<div id="offer-page-id">
+    <div class="offer-page ">
+    <h1 class="content-head mb-5">Exclusive Offers</h1>
+  <div class="container swiper" align="center">
+   <div class="card-container">
+    <div class="swiper-wrapper">
+       
+      <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card" onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/munnar.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Munnar Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore goa with 50% flat discount</p>
+        
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/goa1.jpeg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Goa Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore goa with 50% flat discount</p>
+         
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/taj mahal.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Agra Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore Agra with 50% flat discount</p>
+          
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+
+     
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/manali.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Manali Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore manali with 50% flat discount</p>
+        
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/jaipur.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Jaipur Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore jaipur with 50% flat discount</p>
+      
+          <button class="btn btn-dark mt-2"   style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/ooty.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Ooty Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore ooty with 50% flat discount</p>
+          
+          <button class="btn btn-dark mt-2"   style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+
+
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/mysore.jpg"   alt="">
+        </div>      
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Mysore Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore mysore with 50% flat discount</p>
+          
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+       <div class="swiper-slide" style="width:300px;">
+       <div class="offer-card"  onclick="window.location.href='booking.php';">
+        <div>
+         <img class="card-img" src="images/pexels-mnannapaneni-13819269.jpg"   alt="">
+        </div>    
+        <div class="card-text">
+          <h4 style="font-size: 18px; font-weight: bold;">
+          Banglore Package
+          </h4>
+          <p class="mb-1" style="font-size:14px;">Explore Banglore with 50% flat discount</p>
+          
+          <button class="btn btn-dark mt-2"  style="font-size: 14px;" >Book now</button>
+        </div>
+       </div> 
+       </div>
+
+    </div>
+
+
+      
+       
+
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+
+      
+    </div>
+  </div>
+  </div> 
+
+
+  
+
+
+
+
+      
+    
+    </div>
+
+  </div>
+</div>
+
+
+  
+
+  
+
+  
+<!-- gift section -->
+
+ <div class="gift-page pt-4 pl-4 pr-4 pb-4 ">
+  <div class="container-fluid">
+    <div class="row">
+      <h1 class="col-12 content-head" style="color:#183b56;" >Gift Card</h1>
+      <div class="col-12  col-md-7 pl-md-4 mb-5 mt-2 d-flex flex-column justify-content-center">
+        <h1 class="gift-page-head">
+          Thank you for being a valuable customer to us.
+        </h1>
+        <p class="gift-page-desc">
+          We have a surprise gift for you
+        </p>
+        
+        <div class="d-md-none">
+          <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="gift-page-img pl-5 pr-5" srcset="">
+        </div>
+
+        <button class="body-contents-button additional-button-style mt-3 ml-5 ml-md-1">
+           Claim Now
+        </button>
+      </div>
+    
+
+      <div class="col-md-5  d-none d-md-block">
+        <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png" class="gift-page-img pl-5 pr-5" srcset="">
+      </div>
+    
+ 
+    </div>  
+ </div>
+ </div>
+  
+  <!-- end card section -->
+ <div id="end-card">
+  <footer class="p-5 row" style="background: #2c3e50; width: 100vw; color: #ecf0f1; text-align: center; padding: 30px 20px; font-family: Arial, sans-serif;">
+    <div class="footer-content col-12 col-md-5 text-left">
+      <h2>Thank You for Exploring With Us!</h2>
+      <p>We hope you enjoyed learning about these amazing destinations. Start planning your next adventure today!</p>
+    </div>
+
+    <div class="footer-content  col-12 col-md-4 text-left">
+      <p>📞Call us - 7010564134</p>
+      <p>📌 Customer Care: ✉️ 044-87452465</p>
+      <p>✉️ Email Us: <a href="mailto:info@yourwebsite.com">DiscoverIndia@gmail.com</a></p>
+      <p>🌐 Website Queries: 📧 <a href="">https:/discoverIndia/queries.html  </a></p>
+      
+    </div>  
+
+    <div class="footer-content col-12 col-md-3 text-left" >
+      <div class="mb-2">
+        <a href="https://www.instagram.com" target="_blank" style=" text-decoration: none; color: #ecf0f1;">Instagram</a> |
+        <a href="https://www.facebook.com" target="_blank" style=" text-decoration: none; color: #ecf0f1;">Facebook</a> |
+        <a href="https://www.twitter.com" target="_blank" style=" text-decoration: none; color: #ecf0f1;">Twitter</a>  
+      </div>
+      <p class="mb-2" style="text-decoration: none; color: #ecf0f1;">&copy; 2025 DiscoverIndia. <br>
+      </p>
+      <p class="">All rights reserved.</p>  
+    </div>
+    
+  
+
+  </footer>
+ </div>
+
+  
+
+  <!-- script js -->
+  <script src="script.js"></script>
+         
+  <!-- swiper script link -->
+  <!--=============== SWIPER JS ===============-->
+  <script src="swiper-bundle.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<?php       
+   require_once('connect.php');
+   $query = 'select * from tourbooking';
+   $result = mysqli_query($conn,$query);
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Booking Table</title>
+    <!-- bootstarp code snippets-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+    crossorigin="anonymous"
+  />
+  <script
+    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"
+  ></script>
+
+  
+</head>
+<body class="bg-light">
+    <div class="container ">
+        <div class="row">
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h1 class="display-6 text-center">Trip Booking Info Table</h1>
+                    </div>
+                    <div class="card-body">
+                       <table border="1" class="table table-bordered table-striped">
+                          <tr>
+                            <th>Customer Id</th>
+                            <th>Fullname</th>
+                            <th>Phone Number</th>
+                            <th>Destination</th>
+                            <th>Package Price</th>
+                            <th>Travel date</th>
+                            <th>No of persons</th>
+                          </tr>
+
+                          <?php
+                            if(mysqli_num_rows($result)>0){
+                                while($row=mysqli_fetch_array($result)){
+                                    ?>
+                                    <tr>
+                                        <td><?php echo $row['id'];?></td>
+                                        <td><?php echo $row['fullName'];?></td>
+                                        <td><?php echo $row['phoneNo'];?></td>
+                                        <td><?php echo $row['destination'];?></td>
+                                        <td><?php echo $row['price'];?></td>
+                                        <td><?php echo $row['calendar'];?></td>
+                                        <td><?php echo $row['noPerson'];?></td>
+                                    </tr>
+                                    <?php
+                                }
+                            }
+                            else {
+                                echo "No data found";
+                            }
+                            ?>
+                       </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

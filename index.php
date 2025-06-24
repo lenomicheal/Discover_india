@@ -77,7 +77,7 @@
          }
          
          function log(){
-           window.location.href="login.php";
+           window.location.href="login.html";
          }
       </script>
       <style>
